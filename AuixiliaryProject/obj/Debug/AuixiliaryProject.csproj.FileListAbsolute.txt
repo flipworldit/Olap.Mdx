@@ -1,0 +1,9 @@
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\bin\Debug\AuixiliaryProject.dll
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\bin\Debug\AuixiliaryProject.pdb
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\obj\Debug\AuixiliaryProject.csprojAssemblyReference.cache
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\obj\Debug\AuixiliaryProject.csproj.CoreCompileInputs.cache
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\obj\Debug\AuixiliaryProject.dll
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\obj\Debug\AuixiliaryProject.pdb
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\bin\Debug\OLAP.Mdx.dll
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\bin\Debug\OLAP.Mdx.pdb
+C:\Алим\15.03.2019\OLAP.MDX\AuixiliaryProject\obj\Debug\AuixiliaryProject.csproj.CopyComplete

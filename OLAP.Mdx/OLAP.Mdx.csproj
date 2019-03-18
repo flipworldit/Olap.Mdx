@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B8E3F44-4D02-4EEC-9742-9B0BE8377B5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OLAP.Mdx</RootNamespace>
+    <AssemblyName>OLAP.Mdx</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AuixiliaryProject">
+      <HintPath>..\AuixiliaryProject\obj\Debug\AuixiliaryProject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DateMdxHelper.cs" />
+    <Compile Include="Common\DateTimeRangeExt.cs" />
+    <Compile Include="Common\PeriodType.cs" />
+    <Compile Include="IMdxBuilder.cs" />
+    <Compile Include="IMdxCollectionElements.cs" />
+    <Compile Include="IMdxElement.cs" />
+    <Compile Include="IMdxElementExt.cs" />
+    <Compile Include="MdxBuilder.cs" />
+    <Compile Include="MdxElementsExt\Divider.cs" />
+    <Compile Include="MdxElementsExt\Iif.cs" />
+    <Compile Include="MdxElementsExt\Mesuares.cs" />
+    <Compile Include="MdxElementsExt\Month.cs" />
+    <Compile Include="MdxElementsExt\Returns.cs" />
+    <Compile Include="MdxElementsExt\Round.cs" />
+    <Compile Include="MdxElements\MdxAvg.cs" />
+    <Compile Include="MdxElements\MdxColumnElement.cs" />
+    <Compile Include="MdxElements\MdxDistinctCount.cs" />
+    <Compile Include="MdxElements\MdxDivide.cs" />
+    <Compile Include="MdxElements\MdxDivideNumber.cs" />
+    <Compile Include="MdxElements\MdxDrawContext.cs" />
+    <Compile Include="MdxElements\MdxEmptyElement.cs" />
+    <Compile Include="MdxElements\MdxExpression.cs" />
+    <Compile Include="MdxElements\MdxFilterElement.cs" />
+    <Compile Include="MdxElements\MdxGenerateElement.cs" />
+    <Compile Include="MdxElements\MdxHierarchyElement.cs" />
+    <Compile Include="MdxElements\MdxIif.cs" />
+    <Compile Include="MdxElements\MdxIsEmpty.cs" />
+    <Compile Include="MdxElements\MdxLogicalElements.cs" />
+    <Compile Include="MdxElements\MdxMeasureElement.cs" />
+    <Compile Include="MdxElements\MdxMeasureEqualsZero.cs" />
+    <Compile Include="MdxElements\MdxMeasureIsNullElement.cs" />
+    <Compile Include="MdxElements\MdxMember.cs" />
+    <Compile Include="MdxElements\MdxMovAvg.cs" />
+    <Compile Include="MdxElements\MdxMultiply.cs" />
+    <Compile Include="MdxElements\MdxMultiplyElements.cs" />
+    <Compile Include="MdxElements\MdxMultiplyNumber.cs" />
+    <Compile Include="MdxElements\MdxNonEmpty.cs" />
+    <Compile Include="MdxElements\MdxNonEmptyJoined.cs" />
+    <Compile Include="MdxElements\MdxNull.cs" />
+    <Compile Include="MdxElements\MdxNumber.cs" />
+    <Compile Include="MdxElements\MdxOrder.cs" />
+    <Compile Include="MdxElements\MdxOrderBy.cs" />
+    <Compile Include="MdxElements\MdxPeriodsToDate.cs" />
+    <Compile Include="MdxElements\MdxPrirost.cs" />
+    <Compile Include="MdxElements\MdxPrirostPercent.cs" />
+    <Compile Include="MdxElements\MdxRangeElement.cs" />
+    <Compile Include="MdxElements\MdxRound.cs" />
+    <Compile Include="MdxElements\MdxRowElement.cs" />
+    <Compile Include="MdxElements\MdxSet.cs" />
+    <Compile Include="MdxElements\MdxSetName.cs" />
+    <Compile Include="MdxElements\MdxSubset.cs" />
+    <Compile Include="MdxElements\MdxSubtraction.cs" />
+    <Compile Include="MdxElements\MdxSum.cs" />
+    <Compile Include="MdxElements\MdxSumMeasures.cs" />
+    <Compile Include="MdxElements\MdxTopCountElement.cs" />
+    <Compile Include="MdxElements\MdxValueElement.cs" />
+    <Compile Include="MdxElements\MdxWhereElement.cs" />
+    <Compile Include="MdxElements\MdxWithElement.cs" />
+    <Compile Include="MdxElements\MdxWithEmpty.cs" />
+    <Compile Include="MdxElements\TypedMdxElement.cs" />
+    <Compile Include="MdxElements\UnionMdxElement.cs" />
+    <Compile Include="MdxHelper.cs" />
+    <Compile Include="MesuareCreators\GrowthMeasureCreator.cs" />
+    <Compile Include="MesuareCreators\IMeasureCreator.cs" />
+    <Compile Include="MesuareCreators\AggregateAvgCreator.cs" />
+    <Compile Include="MesuareCreators\AggregateSumCreator.cs" />
+    <Compile Include="MesuareCreators\MeasureCreator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
