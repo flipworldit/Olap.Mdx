@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using LinqExtIn;
 using OLAP.Mdx.MdxElements;
 
 namespace OLAP.Mdx.MdxElementsExt

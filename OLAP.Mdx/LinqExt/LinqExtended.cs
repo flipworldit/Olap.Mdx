@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using LinqExtIn.CollectionAdapters;
+using OLAP.Mdx.LinqExt.CollectionAdapters;
 
-namespace LinqExtIn
+namespace OLAP.Mdx.LinqExt
 {
     public static class LinqExtendedDescendans
     {

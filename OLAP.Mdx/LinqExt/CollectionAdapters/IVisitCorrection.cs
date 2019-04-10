@@ -1,4 +1,4 @@
-namespace LinqExtIn.CollectionAdapters
+namespace OLAP.Mdx.LinqExt.CollectionAdapters
 {
     public interface IVisitCorrection<T>
     {

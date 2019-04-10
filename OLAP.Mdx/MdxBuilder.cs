@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
+using OLAP.Mdx.LinqExt;
 using OLAP.Mdx.MdxElements;
-using LinqExtIn;
 
 namespace OLAP.Mdx
 {

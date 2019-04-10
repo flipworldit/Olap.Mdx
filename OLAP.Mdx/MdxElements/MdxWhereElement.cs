@@ -1,7 +1,6 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using SystemExt;
-using LinqExtIn;
 
 namespace OLAP.Mdx.MdxElements
 {
@@ -83,7 +82,7 @@ namespace OLAP.Mdx.MdxElements
                 {
                     var errorValues = "(" + string.Join(", ", (IEnumerable<string>)errorWheres) + ")";
 
-                    throw new EnableUserViewException(string.Format(
+                    throw new Exception(string.Format(
                         "Нарушение прав доступа. Недоступны значения {0}", errorValues));
 
                     //throw new Exception(string.Format(

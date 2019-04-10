@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace LinqExtIn.CollectionAdapters
+namespace OLAP.Mdx.LinqExt.CollectionAdapters
 {
     public class CollectionLIFO<T>
         : Stack<T>, IVisitCorrection<T>

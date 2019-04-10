@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using LinqExtIn;
+using OLAP.Mdx.LinqExt;
 
 namespace OLAP.Mdx.MdxElements
 {

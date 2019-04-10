@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using OLAP.Mdx;
 
-namespace AuixilaryxMdxBuilder
+namespace OLAP.MDX.Test
 {
     public class MdxBuilderArrayCreator
     {
